@@ -18,11 +18,11 @@ import { DEFAULT_PENALTY_RULES, calculatePenalty } from './utils/penalties.js';
 
 const SETTINGS_DOC_ID = 'rules';
 const DEFAULT_WEEKLY_SCHEDULE = {
-  monday: { active: true, entryTime: '08:00' },
-  tuesday: { active: true, entryTime: '08:00' },
-  wednesday: { active: true, entryTime: '08:00' },
-  thursday: { active: true, entryTime: '08:00' },
-  friday: { active: true, entryTime: '08:00' }
+  monday: { active: true, entryTime: '09:00' },
+  tuesday: { active: true, entryTime: '09:00' },
+  wednesday: { active: true, entryTime: '09:00' },
+  thursday: { active: true, entryTime: '09:00' },
+  friday: { active: true, entryTime: '09:00' }
 };
 
 function withId(snapshot) {
