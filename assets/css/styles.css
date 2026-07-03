@@ -1,0 +1,107 @@
+:root {
+  --app-bg: #f6f7f9;
+  --app-border: #dee2e6;
+  --app-muted: #6c757d;
+}
+
+body {
+  background: var(--app-bg);
+}
+
+.app-shell {
+  min-height: calc(100vh - 56px);
+  padding: 1.25rem;
+}
+
+.page-title {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.metric-card {
+  border: 1px solid var(--app-border);
+  border-radius: 8px;
+  height: 100%;
+}
+
+.metric-card .metric-value {
+  font-size: 1.85rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.outlook-layout {
+  background: #fff;
+  border: 1px solid var(--app-border);
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: minmax(260px, 340px) 1fr;
+  min-height: calc(100vh - 150px);
+  overflow: hidden;
+}
+
+.employee-list-pane {
+  border-right: 1px solid var(--app-border);
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.employee-list {
+  overflow: auto;
+}
+
+.employee-list .list-group-item {
+  border-left: 0;
+  border-right: 0;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.employee-list .list-group-item.active {
+  background: #e9f2ff;
+  color: #0d6efd;
+  border-color: var(--app-border);
+}
+
+.employee-profile-pane {
+  min-width: 0;
+  overflow: auto;
+  padding: 1.25rem;
+}
+
+.section-title {
+  color: #212529;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: .75rem;
+}
+
+.empty-state {
+  color: var(--app-muted);
+  padding: 2rem;
+  text-align: center;
+}
+
+.table-fixed {
+  table-layout: fixed;
+}
+
+@media (max-width: 768px) {
+  .app-shell {
+    padding: .75rem;
+  }
+
+  .outlook-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .employee-list-pane {
+    border-bottom: 1px solid var(--app-border);
+    border-right: 0;
+    max-height: 45vh;
+  }
+}
